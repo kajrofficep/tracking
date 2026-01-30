@@ -1,0 +1,9 @@
+Variable value print -- dlv-pagePostAuthor
+
+<script>
+  console.log("--- GTM Debug Start ---");
+  console.log("Page Type:", {{dlv-pagePostAuthor}});
+  console.log("--- GTM Debug End ---");
+</script>
+
+Add abobe code in tag > Custom html > preview > check in browser console

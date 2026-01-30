@@ -1,0 +1,25 @@
+Parameter1 :
+currency > dlv-currency
+  dlv-currency > ecommerce.currency
+Parameter2: items 
+1. first Create dlv-items > ecommerce.items
+
+2. past below code in custom javascript
+
+function(){
+var items = {{dlv-items}}; // Item Array
+return items.map(function(item){
+return{
+item_id : item.item_id.toString(),
+item_name : item.item_name,
+price : parseFloat(item.price),
+quantity: item.quantity ? parseFloat(item.quantity) : 1
+}
+})
+}
+
+3. Trigger custom event > match > event equels view_item_list
+
+
+
+

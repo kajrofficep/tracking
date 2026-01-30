@@ -1,0 +1,7 @@
+<script>
+document.querySelector("#post-219 > div > div > div.elementor-element.elementor-element-5d4f8ef.e-flex.e-con-boxed.e-con.e-parent.e-lazyloaded > div > div.elementor-element.elementor-element-846ff3d.elementor-widget.elementor-widget-heading > div > h2").addEventListener('copy', function(){
+    window.dataLayer.push({
+    event : "data_copyed"
+    })
+})
+</script>

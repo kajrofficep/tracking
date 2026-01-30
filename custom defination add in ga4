@@ -1,0 +1,25 @@
+Register Custom Dimensions in GA4
+This is the most common mistake! Even if you send page_type or content_group from GTM, GA4 will ignore them in your reports unless you register them.
+
+Open GA4 > Admin > Custom Definitions.
+
+Click Create Custom Dimension.
+
+Dimension name: Page Type
+
+Scope: Event
+
+Event parameter: page_type (must match exactly what you typed in GTM).
+
+Repeat this for content_group and language.
+
+Note: user_id does not need a custom dimension; GA4 has a built-in slot for it.
+
+How to verify it's working:
+Click Preview in GTM.
+
+Visit your site.
+
+In the Tag Assistant window, click on the Config or Page View event.
+
+Check the API Call tab to see if page_type, user_id, etc., are listed in the "Values" section.
